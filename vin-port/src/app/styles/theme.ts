@@ -9,15 +9,27 @@ export const theme = {
     tertiary: "#6DC0D5",
     quaternary: "#BEEDAA",
     quinary: "#136F63",
+    white: "#FFFFFF",
+    buttonGradient: `linear-gradient(90deg, #BEEDAA 50%, #101D42 50%)`
   },
 
   fonts: {
-    inter: inter.style.fontFamily
+    inter: inter.style.fontFamily,
   },
 
   fontSizes: {
     
-  }
+  },
+
+  buttonSizes: {
+    sm: "50px",
+    md: "120px",
+    bg: "200px;"
+  },
+
+   gradients: {
+    
+   }
 
 
 };

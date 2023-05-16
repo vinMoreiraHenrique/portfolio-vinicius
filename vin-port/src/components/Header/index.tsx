@@ -1,13 +1,13 @@
-import {StyledHeader, StyledContainer} from "./style";
+import { StyledHeader, StyledContainer } from "./style";
 
 const Header = () => {
-    return (
-        <StyledHeader>
-            <StyledContainer>
-                
-            </StyledContainer>
-        </StyledHeader>
-    );
-}
+  return (
+    <StyledHeader>
+      <StyledContainer>
+        <h1>Arroz com feijão</h1>
+      </StyledContainer>
+    </StyledHeader>
+  );
+};
 
 export default Header;

@@ -4,7 +4,14 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledContainer>
-        <h1>Arroz com feijão</h1>
+        <h1>Logo</h1>
+        <ul>
+          <li><a href="#">Exemplo</a></li>
+          <li><a href="#">Exemplo</a></li>
+          <li><a href="#">Exemplo</a></li>
+          <li><a href="#">Exemplo</a></li>
+          <li><a href="#">Exemplo</a></li>
+        </ul>
       </StyledContainer>
     </StyledHeader>
   );

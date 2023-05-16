@@ -26,7 +26,20 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 
-body{display: flex;
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit
+}
+
+body{
+    display: flex;
     background-color: ${theme.colors.primary};
     width: 100%;
     align-items: center;
@@ -40,5 +53,6 @@ main{
     background-color: ${theme.colors.quinary};
     width: 1280px;
     height: 720px;
+    margin-top: 68.14px;
 }
-`
+`;

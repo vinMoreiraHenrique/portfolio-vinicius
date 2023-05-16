@@ -11,11 +11,13 @@ export const theme = {
     quinary: "#136F63",
     white: "#FFFFFF",
     buttonGradient: `linear-gradient(90deg, #BEEDAA 50%, #101D42 50%)`,
+
   },
 
   fonts: {
     inter: inter.style.fontFamily,
   },
+
 
   fontSizes: {},
 

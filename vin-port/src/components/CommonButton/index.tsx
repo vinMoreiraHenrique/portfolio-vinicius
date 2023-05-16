@@ -11,6 +11,8 @@ const CommonButton = ({ text, width }: ICommonButton) => {
       <p>{text}</p>
     </StyledButton>
   );
+
+  
 };
 
 export default CommonButton;

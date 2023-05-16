@@ -1,20 +1,16 @@
 "use client";
-
 import { theme } from "@/app/styles/theme";
 import { styled } from "styled-components";
 
 interface IStyledButtonProps {
-
   width?: string;
   height?: string;
 }
-
 
 export const StyledButton = styled.button<IStyledButtonProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: ${(props) => (props.width ? props.width : "auto")};
   height: ${(props) => (props.height ? props.height : "40px")};
   background-image: ${theme.colors.buttonGradient};
@@ -58,6 +54,5 @@ export const StyledButton = styled.button<IStyledButtonProps>`
       transform: translateX(0);
     }
   }
-`;
-
   
+`;

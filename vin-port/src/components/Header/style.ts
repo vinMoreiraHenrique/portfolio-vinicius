@@ -9,6 +9,6 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledContainer = styled.div`
-  background-color: pink;
+  
 `;
 

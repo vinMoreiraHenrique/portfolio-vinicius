@@ -4,11 +4,9 @@ import { theme } from "@/app/styles/theme";
 import { styled } from "styled-components";
 
 interface IStyledButtonProps {
-
   width?: string;
   height?: string;
 }
-
 
 export const StyledButton = styled.button<IStyledButtonProps>`
   display: flex;
@@ -33,12 +31,11 @@ export const StyledButton = styled.button<IStyledButtonProps>`
   cursor: pointer;
   opacity: 0;
   transform: translateX(-50px);
-  animation: appear 0.5s forwards;
+  animation: ${theme.animations.appear} 0.5s forwards;
 
   p {
     color: ${theme.colors.quaternary};
-    transition: .5s;
-
+    transition: 0.5s;
   }
 
   &:hover {
@@ -47,17 +44,4 @@ export const StyledButton = styled.button<IStyledButtonProps>`
     }
     background-position: 0 0;
   }
-
-  @keyframes appear {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
 `;
-
-  

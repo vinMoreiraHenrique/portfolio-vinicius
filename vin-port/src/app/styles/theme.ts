@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { keyframes } from "styled-components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,13 +12,11 @@ export const theme = {
     quinary: "#136F63",
     white: "#FFFFFF",
     buttonGradient: `linear-gradient(90deg, #BEEDAA 50%, #101D42 50%)`,
-
   },
 
   fonts: {
     inter: inter.style.fontFamily,
   },
-
 
   fontSizes: {},
 
@@ -30,7 +29,7 @@ export const theme = {
   gradients: {},
 
   animations: {
-    appear: `@keyframes appear {
+    appear: keyframes` 
       from {
         opacity: 0;
         transform: translateX(-50px);
@@ -39,6 +38,25 @@ export const theme = {
         opacity: 1;
         transform: translateX(0);
       }
-    }`,
+      `,
+
+    fadeOut: keyframes`
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        `,
+
+    fadeIn: keyframes`
+          0% {
+            opacity: 0;
+            transform: translateY(25px);
+          }
+          100% {
+            opacity: 1;
+          }
+        `,
   },
 };

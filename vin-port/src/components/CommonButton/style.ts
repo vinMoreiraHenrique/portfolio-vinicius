@@ -13,7 +13,7 @@ export const StyledButton = styled.button<IStyledButtonProps>`
   justify-content: center;
   align-items: center;
 
-  width: ${(props) => (props.width ? props.width : "auto")};
+  width: ${(props) => (props.width ? props.width : "fit-content")};
   height: ${(props) => (props.height ? props.height : "40px")};
   background-image: ${theme.colors.buttonGradient};
   background-position: 100% 0;
@@ -32,6 +32,7 @@ export const StyledButton = styled.button<IStyledButtonProps>`
   opacity: 0;
   transform: translateX(-50px);
   animation: ${theme.animations.appear} 0.5s forwards;
+  padding: 20px 20px;
 
   p {
     color: ${theme.colors.quaternary};
@@ -41,6 +42,7 @@ export const StyledButton = styled.button<IStyledButtonProps>`
   &:hover {
     p {
       color: ${theme.colors.white};
+      transform: scale(1.2);
     }
     background-position: 0 0;
   }

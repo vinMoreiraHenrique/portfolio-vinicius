@@ -1,13 +1,20 @@
-"use client"
+"use client";
 import { theme } from "@/app/styles/theme";
 import styled from "styled-components";
 
-export const StyledGenericContainer = styled.section`
+interface IStyledGenericContainerProps {
+  htmlTag?: "div" | "section";
+  flexdirection?: "column" | "row";
+  
+}
+
+export const StyledGenericContainer = styled.div<IStyledGenericContainerProps>`
 display: flex;
-width: 100%;
+flex-direction: ${props=> props.flexdirection? "column":"row"};
+width: fit-content;
 padding: 40px 20px;
+gap: 40px;
 background-color: ${theme.colors.primary};
-width: 100%;
 h2{
     color: ${theme.colors.secondary};
     font-weight: bolder;
@@ -15,4 +22,3 @@ h2{
     width: 500px;
 }
 `
-

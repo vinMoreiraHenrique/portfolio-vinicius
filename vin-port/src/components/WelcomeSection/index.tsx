@@ -10,22 +10,22 @@ const textArray = ["Full-stack", "Front-end", "Back-end"];
 const WelcomeSection = () => {
   const [index, setIndex] = useState(0);
   const textRef = useRef<HTMLSpanElement>(null);
-  const [fade, setFade] = useState(false);
+  const [fadeAnimation, setFadeAnimation] = useState<boolean>(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setFade(true);
+      setFadeAnimation(true);
       setTimeout(() => {
         setIndex((index) => (index + 1) % textArray.length);
-        setFade(false);
+        setFadeAnimation(false);
       }, 1000);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <GenericContainer>
+    <GenericContainer as="section">
       <StyledImg
         src="/images/perfil.jpg"
         alt="Photo of Vinícius"
@@ -33,12 +33,13 @@ const WelcomeSection = () => {
         height={250}
       />
       
-        <StyledText fade={fade}>
-          Hello! I am Vinícius and I am a{" "}
-          <span ref={textRef}>{textArray[index]}</span> developer.
-        </StyledText>
-
-        <CommonButton text="aloooooo" />
+        <GenericContainer as="div" flexdirection="column">
+          <StyledText $fade={fadeAnimation}>
+            Hello! I am Vinícius and I am a{" "}
+            <span className="content-span" ref={textRef}>{textArray[index]}</span> developer.
+          </StyledText>
+          <CommonButton text="Hire me" />
+        </GenericContainer>
   
     </GenericContainer>
   );

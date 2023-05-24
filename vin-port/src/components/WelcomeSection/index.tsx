@@ -18,7 +18,7 @@ const WelcomeSection = () => {
       setTimeout(() => {
         setIndex((index) => (index + 1) % textArray.length);
         setFadeAnimation(false);
-      }, 1000);
+      }, 800);
     }, 4000);
 
     return () => clearInterval(intervalId);
@@ -35,8 +35,8 @@ const WelcomeSection = () => {
       
         <GenericContainer as="div" flexdirection="column">
           <StyledText $fade={fadeAnimation}>
-            Hello! I am Vinícius and I am a{" "}
-            <span className="content-span" ref={textRef}>{textArray[index]}</span> developer.
+            Hello! I am Vinícius and I am a {" "}
+             <span className="content-wrapper"><span className="content-span" ref={textRef}>{textArray[index]}</span></span> developer.
           </StyledText>
           <CommonButton text="Hire me" />
         </GenericContainer>

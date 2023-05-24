@@ -26,9 +26,15 @@ export const StyledImg = styled(Image)`
 
 export const StyledText = styled.h2<ISpan>`
   overflow: hidden;
-  height: 69px;
+  height: 100%;
   vertical-align: text-bottom;
-  span {
+  .content-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: text-bottom;
+    padding-bottom: 0px;
+  }
+  .content-span {
     display: inline-block;
     color: yellow;
     animation: ${(props) =>

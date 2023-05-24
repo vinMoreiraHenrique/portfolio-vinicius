@@ -52,7 +52,10 @@ export const theme = {
     fadeIn: keyframes`
           0% {
             opacity: 0;
-            transform: translateY(25px);
+            transform: translateY(15px);
+          }
+          50%{
+            opacity: 0;
           }
           100% {
             opacity: 1;

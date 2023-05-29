@@ -50,7 +50,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ${theme.colors.quinary};
+    background-color: ${theme.colors.primary};
     width: 1280px;
     height: 720px;
     margin-top: 68.14px;

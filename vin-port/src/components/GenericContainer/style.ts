@@ -3,22 +3,28 @@ import { theme } from "@/app/styles/theme";
 import styled from "styled-components";
 
 interface IStyledGenericContainerProps {
-  htmlTag?: "div" | "section";
+  as: "section" | "div" | "aside";
   flexdirection?: "column" | "row";
+  containerWidth?: string;
 }
 
 export const StyledGenericContainer = styled.div<IStyledGenericContainerProps>`
   display: flex;
   flex-direction: ${(props) => (props.flexdirection ? "column" : "row")};
-  width: fit-content;
-  @media (max-width: 865px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  padding: 40px 20px;
+  width: ${(props) =>
+    props.containerWidth ? props.containerWidth : "fit-content"};
+  padding: ${(props) => (props.as == "section" ? "40px 20px" : "20px 20px")};
   gap: 30px;
   background-color: ${theme.colors.primary};
+  align-items: center;
+  @media (max-width: 865px) {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  button {
+    align-self: start;
+  }
   h2 {
     color: ${theme.colors.secondary};
     font-weight: bolder;

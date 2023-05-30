@@ -1,10 +1,9 @@
 "use client";
-import { StyledImg, StyledText } from "./style";
+import { StyledImg } from "./style";
 import GenericContainer from "../GenericContainer";
 import { useEffect, useRef, useState } from "react";
-import { keyframes } from "styled-components";
-import { css } from "styled-components";
 import CommonButton from "../CommonButton";
+import { StyledText } from "../StyledText/style";
 
 const textArray = ["Full-stack", "Front-end", "Back-end"];
 const WelcomeSection = () => {
@@ -25,22 +24,32 @@ const WelcomeSection = () => {
   }, []);
 
   return (
-    <GenericContainer as="section">
+    <GenericContainer
+      as="section"
+      containerWidth="100%"
+      justifyContainer="center"
+      containerHeight="90vh"
+      alignContainer="center"
+    >
       <StyledImg
         src="/images/perfil.jpg"
         alt="Photo of Vinícius"
         width={250}
         height={250}
       />
-      
-        <GenericContainer as="div" flexdirection="column">
-          <StyledText $fade={fadeAnimation}>
-            Hello! I am Vinícius and I am a {" "}
-             <span className="content-wrapper"><span className="content-span" ref={textRef}>{textArray[index]}</span></span> developer.
-          </StyledText>
-          <CommonButton text="Hire me" />
-        </GenericContainer>
-  
+
+      <GenericContainer as="div" containerFlexDirection="column" containerHeight="fit-content">
+        <StyledText $fade={fadeAnimation} as="h2">
+          Hello! I am Vinícius and I am a{" "}
+          <span className="content-wrapper">
+            <span className="content-span" ref={textRef}>
+              {textArray[index]}
+            </span>
+          </span>{" "}
+          developer.
+        </StyledText>
+        <CommonButton text="Hire me" />
+      </GenericContainer>
     </GenericContainer>
   );
 };

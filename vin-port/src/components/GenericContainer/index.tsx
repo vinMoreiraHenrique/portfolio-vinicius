@@ -37,4 +37,5 @@ const GenericContainer = ({
   );
 };
 
+
 export default GenericContainer;

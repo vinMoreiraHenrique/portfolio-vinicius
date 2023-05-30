@@ -5,11 +5,9 @@ import WelcomeSection from "@/components/WelcomeSection";
 export default function Home() {
   return (
     <main>
-      
         <Header />
         <WelcomeSection />
-        <AboutSection />
-      
+        <AboutSection />      
     </main>
   );
 }

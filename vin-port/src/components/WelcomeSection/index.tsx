@@ -1,8 +1,9 @@
 "use client";
-import { StyledImg, StyledText } from "./style";
+import { StyledImg } from "./style";
 import GenericContainer from "../GenericContainer";
 import { useEffect, useRef, useState } from "react";
 import CommonButton from "../CommonButton";
+import { StyledText } from "../StyledText/style";
 
 const textArray = ["Full-stack", "Front-end", "Back-end"];
 const WelcomeSection = () => {
@@ -23,7 +24,13 @@ const WelcomeSection = () => {
   }, []);
 
   return (
-    <GenericContainer as="section">
+    <GenericContainer
+      as="section"
+      containerWidth="100%"
+      justifyContainer="center"
+      containerHeight="90vh"
+      alignContainer="center"
+    >
       <StyledImg
         src="/images/perfil.jpg"
         alt="Photo of Vinícius"
@@ -31,8 +38,9 @@ const WelcomeSection = () => {
         height={200}
       />
 
-      <GenericContainer as="div" flexdirection="column">
-        <StyledText $fade={fadeAnimation}>
+
+      <GenericContainer as="div" containerFlexDirection="column" containerHeight="fit-content">
+        <StyledText $fade={fadeAnimation} as="h2">
           Hello! I am Vinícius and I am a{" "}
           <span className="content-wrapper">
             <span className="content-span" ref={textRef}>

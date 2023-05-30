@@ -24,22 +24,22 @@ export const StyledImg = styled(Image)`
   animation: ${rotate} 0.7s ease-in-out forwards;
 `;
 
-export const StyledText = styled.h2<ISpan>`
-  overflow: hidden;
-  height: 100%;
-  vertical-align: text-bottom;
-  .content-wrapper {
-    display: inline-block;
-    overflow: hidden;
-    vertical-align: text-bottom;
-    padding-bottom: 0px;
-  }
-  .content-span {
-    display: inline-block;
-    color: yellow;
-    animation: ${(props) =>
-        props.$fade ? theme.animations.fadeOut : theme.animations.fadeIn}
-      1s ease-in-out forwards;
-    transform: translateY(0px);
-  }
-`;
+// export const StyledText = styled.h2<ISpan>`
+//   overflow: hidden;
+//   height: 100%;
+//   vertical-align: text-bottom;
+//   .content-wrapper {
+//     display: inline-block;
+//     overflow: hidden;
+//     vertical-align: text-bottom;
+//     padding-bottom: 0px;
+//   }
+//   .content-span {
+//     display: inline-block;
+//     color: yellow;
+//     animation: ${(props) =>
+//         props.$fade ? theme.animations.fadeOut : theme.animations.fadeIn}
+//       1s ease-in-out forwards;
+//     transform: translateY(0px);
+//   }
+// `;

@@ -38,7 +38,7 @@ const WelcomeSection = () => {
         height={200}
       />
 
-      <GenericContainer as="div" containerFlexDirection="column" containerHeight="fit-content" alignContainer="center">
+      <GenericContainer as="div" containerFlexDirection="column" containerHeight="fit-content" alignContainer="center" justifyContainer="center">
         <StyledText $fade={fadeAnimation} as="h2" >
           Hello! I am Vinícius and I am a{" "}
           <span className="content-wrapper">

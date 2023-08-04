@@ -26,6 +26,9 @@ export const StyledGenericContainer = styled.div<IStyledGenericContainerProps>`
   button {
     align-self: start;
   }
+  padding: 40px 20px;
+  gap: 30px;
+  background-color: ${theme.colors.primary};
   h2 {
     color: ${theme.colors.secondary};
     font-weight: bolder;

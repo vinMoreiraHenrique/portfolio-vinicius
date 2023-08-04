@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 export const StyledHeader = styled.header`
   display: flex;
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.transparent};
   width: 100%;
   color: white;
   justify-content: center;

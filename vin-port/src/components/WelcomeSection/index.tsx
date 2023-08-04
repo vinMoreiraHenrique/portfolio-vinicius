@@ -1,9 +1,9 @@
 "use client";
 import { StyledImg } from "./style";
-import GenericContainer from "../GenericContainer";
 import { useEffect, useRef, useState } from "react";
 import CommonButton from "../CommonButton";
 import { StyledText } from "../StyledText/style";
+import GenericContainer from "../GenericContainer";
 
 const textArray = ["Full-stack", "Front-end", "Back-end"];
 const WelcomeSection = () => {
@@ -38,8 +38,8 @@ const WelcomeSection = () => {
         height={250}
       />
 
-      <GenericContainer as="div" containerFlexDirection="column" containerHeight="fit-content">
-        <StyledText $fade={fadeAnimation} as="h2">
+      <GenericContainer as="div" containerFlexDirection="column" containerHeight="fit-content" alignContainer="center">
+        <StyledText $fade={fadeAnimation} as="h2" >
           Hello! I am Vinícius and I am a{" "}
           <span className="content-wrapper">
             <span className="content-span" ref={textRef}>

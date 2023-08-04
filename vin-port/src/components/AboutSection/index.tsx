@@ -5,7 +5,7 @@ import { StyledImg } from "../WelcomeSection/style";
 const AboutSection = () => {
   return (
     <GenericContainer as="section" justifyContainer="center" containerWidth="100%">
-        <GenericContainer as="div">
+        <GenericContainer as="div" alignContainer="center" containerFlexDirection="column" containerHeight="100vh" >
           <StyledImg
             src="/images/perfil.jpg"
             alt="Photo of Vinícius"

@@ -25,12 +25,12 @@ const GenericContainer = ({
 }: GenericContainerProps) => {
   return (
     <StyledGenericContainer
-      containerFlexDirection={containerFlexDirection}
-      containerWidth={containerWidth}
-      justifyContainer={justifyContainer}
+      containerflexdirection={containerFlexDirection}
+      containerwidth={containerWidth}
+      justifycontainer={justifyContainer}
       as={as}
-      containerHeight={containerHeight}
-      alignContainer={alignContainer}
+      containerheight={containerHeight}
+      aligncontainer={alignContainer}
     >
       {children}
     </StyledGenericContainer>

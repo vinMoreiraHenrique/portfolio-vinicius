@@ -11,6 +11,7 @@ export const theme = {
     quaternary: "#BEEDAA",
     quinary: "#136F63",
     white: "#FFFFFF",
+    transparent: "transparent",
     buttonGradient: `linear-gradient(90deg, #BEEDAA 50%, #101D42 50%)`,
   },
 

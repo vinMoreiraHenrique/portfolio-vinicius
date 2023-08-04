@@ -4,20 +4,20 @@ import styled from "styled-components";
 
 interface IStyledGenericContainerProps {
   htmlTag?: "div" | "section";
-  containerFlexDirection?: "column" | "row";
-  containerWidth?: string;
-  justifyContainer?: "center" | "flex-start" | "flex-end" | "space-around" | "space-between" | "space-evenly";
-  alignContainer?: "center" | "flex-start" | "flex-end";
-  containerHeight?: string;
+  containerflexdirection?: "column" | "row";
+  containerwidth?: string;
+  justifycontainer?: "center" | "flex-start" | "flex-end" | "space-around" | "space-between" | "space-evenly";
+  aligncontainer?: "center" | "flex-start" | "flex-end";
+  containerheight?: string;
 }
 
 export const StyledGenericContainer = styled.div<IStyledGenericContainerProps>`
   display: flex;
-  flex-direction: ${(props) => props.containerFlexDirection || "row"};
-  width: ${(props)=> props.containerWidth? props.containerWidth:"fit-content"};
-  height: ${(props)=> props.containerHeight? props.containerHeight:"auto"};
-  justify-content: ${(props)=> props.justifyContainer? props.justifyContainer : "flex-start"};
-  align-items: ${(props)=>props.alignContainer? props.alignContainer: "flex-start"};
+  flex-direction: ${(props) => props.containerflexdirection || "row"};
+  width: ${(props)=> props.containerwidth? props.containerwidth:"fit-content"};
+  height: ${(props)=> props.containerheight? props.containerheight:"auto"};
+  justify-content: ${(props)=> props.justifycontainer? props.justifycontainer : "flex-start"};
+  align-items: ${(props)=>props.aligncontainer? props.aligncontainer: "flex-start"};
   @media (max-width: 865px) {
     align-items: center;
     flex-direction: column;

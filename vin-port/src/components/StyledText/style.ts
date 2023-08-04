@@ -1,17 +1,20 @@
-"use client"
+"use client";
 import { theme } from "@/app/styles/theme";
 import { styled } from "styled-components";
 
 interface IText {
-    $fade?: boolean;
-    as: string;
+  $fade?: boolean;
+  as: string;
+  textWidth?: string;
 }
 
 export const StyledText = styled.h2<IText>`
   overflow: hidden;
   height: 100%;
   vertical-align: text-bottom;
-  color: ${(props)=>props.as == "p"? theme.colors.white: theme.colors.secondary};
+  width: ${(props) => (props.textWidth ? props.textWidth : "auto")};
+  color: ${(props) =>
+    props.as == "p" ? theme.colors.white : theme.colors.secondary};
   .content-wrapper {
     display: inline-block;
     overflow: hidden;

@@ -18,7 +18,7 @@ const WelcomeSection = () => {
         setIndex((index) => (index + 1) % textArray.length);
         setFadeAnimation(false);
       }, 800);
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -34,8 +34,8 @@ const WelcomeSection = () => {
       <StyledImg
         src="/images/perfil.jpg"
         alt="Photo of Vinícius"
-        width={250}
-        height={250}
+        width={200}
+        height={200}
       />
 
       <GenericContainer as="div" containerFlexDirection="column" containerHeight="fit-content" alignContainer="center">

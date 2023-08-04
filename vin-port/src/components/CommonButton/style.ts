@@ -12,7 +12,6 @@ export const StyledButton = styled.button<IStyledButtonProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: ${(props) => (props.width ? props.width : "fit-content")};
   height: ${(props) => (props.height ? props.height : "40px")};
   background-image: ${theme.colors.buttonGradient};

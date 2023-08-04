@@ -19,13 +19,13 @@ export const StyledGenericContainer = styled.div<IStyledGenericContainerProps>`
   justify-content: ${(props)=> props.justifycontainer? props.justifycontainer : "flex-start"};
   align-items: ${(props)=>props.aligncontainer? props.aligncontainer: "flex-start"};
   @media (max-width: 865px) {
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
   }
-  padding: 40px 20px;
-  gap: 30px;
-  background-color: ${theme.colors.primary};
+  button {
+    align-self: start;
+  }
   h2 {
     color: ${theme.colors.secondary};
     font-weight: bolder;

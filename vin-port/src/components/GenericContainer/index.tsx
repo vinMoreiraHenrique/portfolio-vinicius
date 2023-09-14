@@ -13,6 +13,9 @@ type GenericContainerProps = {
   as: "section" | "div" | "aside";
   containerHeight?: string;
   alignContainer?: "center" | "flex-start" | "flex-end";
+  borderColor?: string;
+  borderWidth?:"3px";
+  overflow?: "hidden";
 };
 const GenericContainer = ({
   children,
@@ -21,7 +24,10 @@ const GenericContainer = ({
   justifyContainer,
   as,
   containerHeight,
-  alignContainer
+  alignContainer,
+  borderColor,
+  borderWidth,
+  overflow
 }: GenericContainerProps) => {
   return (
     <StyledGenericContainer
@@ -31,6 +37,9 @@ const GenericContainer = ({
       as={as}
       containerheight={containerHeight}
       aligncontainer={alignContainer}
+      bordercolor={borderColor}
+      borderwidth={borderWidth}
+      overflow={overflow}
     >
       {children}
     </StyledGenericContainer>

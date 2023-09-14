@@ -34,12 +34,12 @@ const WelcomeSection = () => {
       <StyledImg
         src="/images/perfil.jpg"
         alt="Photo of Vinícius"
-        width={200}
-        height={200}
+        width={250    }
+        height={250}
       />
 
       <GenericContainer as="div" containerFlexDirection="column" containerHeight="fit-content" alignContainer="center">
-        <StyledText $fade={fadeAnimation} as="h2" >
+        <StyledText $fade={fadeAnimation} as="h1" >
           Hello! I am Vinícius and I am a{" "}
           <span className="content-wrapper">
             <span className="content-span" ref={textRef}>

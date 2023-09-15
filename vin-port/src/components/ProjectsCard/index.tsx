@@ -1,10 +1,10 @@
-"use client";
+"use-client";
 import { api } from "@/api";
 import GenericContainer from "../GenericContainer";
-import { StyledText } from "../StyledText/style";
+
 import { StyledProjectsCard } from "./style";
 import { useEffect, useState } from "react";
-import { theme } from "@/app/styles/theme";
+import { StyledText } from "../StyledText/style";
 
 const ProjectsCard = () => {
   const [repos, setRepos] = useState<any>([]);
@@ -26,8 +26,8 @@ const ProjectsCard = () => {
   }, [repos]);
   return (
     <StyledProjectsCard>
-      <GenericContainer as="div" containerFlexDirection="column" overflow="hidden">
-        {repos.length > 0 && repos.map((repo: any) => <StyledText as="p" style={{ color: theme.colors.white }} key={repo.id}>{repo.name}</StyledText>)}
+      <GenericContainer as="div" containerFlexDirection="column">
+        {repos.length > 0 && repos.map((repo: any) => <StyledText as="p" key={repo.id}>{repo.name}</StyledText>)}
       </GenericContainer>
     </StyledProjectsCard>
   );

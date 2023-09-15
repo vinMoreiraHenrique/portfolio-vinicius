@@ -4,12 +4,11 @@ import { styled } from "styled-components";
 
 interface IText {
   $fade?: boolean;
-  as: string;
+  as?: string;
   textWidth?: string;
 }
 
 export const StyledText = styled.h2<IText>`
-  overflow: hidden;
   height: 100%;
   vertical-align: text-bottom;
   width: ${(props) => (props.textWidth ? props.textWidth : "auto")};

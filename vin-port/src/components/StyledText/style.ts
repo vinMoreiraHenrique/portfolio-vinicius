@@ -13,7 +13,7 @@ export const StyledText = styled.h2<IText>`
   vertical-align: text-bottom;
   width: ${(props) => (props.textWidth ? props.textWidth : "auto")};
   color: ${(props) =>
-    props.as == "p" ? theme.colors.white : theme.colors.secondary};
+    props.as == "p" ? theme.colors.pText : theme.colors.secondary};
   .content-wrapper {
     display: inline-block;
     overflow: hidden;

@@ -40,7 +40,7 @@ export const StyledButton = styled.button<IStyledButtonProps>`
 
   &:hover {
     p {
-      color: ${theme.colors.white};
+      color: ${theme.colors.pText};
       transform: scale(1.2);
     }
     background-position: 0 0;

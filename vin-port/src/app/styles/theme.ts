@@ -10,7 +10,7 @@ export const theme = {
     tertiary: "#6DC0D5",
     quaternary: "#BEEDAA",
     quinary: "#136F63",
-    white: "#FFFFFF",
+    pText: "#FFFFFF",
     transparent: "transparent",
     buttonGradient: `linear-gradient(90deg, #BEEDAA 50%, #101D42 50%)`,
   },

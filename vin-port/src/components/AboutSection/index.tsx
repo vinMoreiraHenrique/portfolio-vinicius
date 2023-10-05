@@ -1,7 +1,7 @@
 "use client"
 import GenericContainer from "../GenericContainer";
-import ProjectsCard from "../ProjectsCard";
-import { StyledProjectsCard } from "../ProjectsCard/style";
+import ProjectsSection from "../ProjectsSection";
+import { StyledProjectsCard } from "../ProjectsSection/style";
 import { StyledText } from "../StyledText/style";
 import { StyledImg } from "../WelcomeSection/style";
 
@@ -35,7 +35,7 @@ const AboutSection = () => {
           adipisicing elit. Asperiores, officia labore.
         </StyledText>
       </GenericContainer>
-      <ProjectsCard />
+      
     </GenericContainer>
   );
 };

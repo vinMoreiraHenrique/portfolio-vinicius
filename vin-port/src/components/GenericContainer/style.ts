@@ -25,7 +25,7 @@ export const StyledGenericContainer = styled.div<IStyledGenericContainerProps>`
   border-width: ${(props)=> props.borderwidth};
   border-style:${(props)=> props.borderwidth? "solid" : "none"};
   overflow: ${(props)=> props.overflow? props.overflow: "hidden"};
-  @media (max-width: 865px) {
+  @media (max-width: 1114px) {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
